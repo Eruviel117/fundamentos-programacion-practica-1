@@ -80,6 +80,7 @@ function celsiusAFahrenheit(celsius) {
 function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
+  //retorna si el numero es par o impar 
   return numero % 2 === 0 ? "par" : "impar";
 
 }
@@ -91,13 +92,14 @@ function parOImpar(numero) {
  */
 function evaluarNota(nota) {
   // TODO: Implementa la lÃ³gica con if/else
-  if (nota < 0 || nota > 100) {
-    throw new Error('La nota debe estar entre 0 y 100');
+    //evaluar nota
+  if (nota >= 60) {
+    return "Aprobado";
+  } else {
+    return "Reprobado";
   }
-  return nota >= 60 ? "Aprobado" : "Reprobado";
 
 
-}
 
 /**
  * Ejercicio 2.3: El mayor de tres nÃºmeros (4 puntos)
