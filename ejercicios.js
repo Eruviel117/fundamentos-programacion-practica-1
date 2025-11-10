@@ -15,13 +15,13 @@ function miInformacion() {
   // TODO: Declara las variables nombre, edad y carrera
   // Ejemplo: const nombre = "Juan";
   
-  const nombre = "";
-  const edad = 0;
-  const carrera = "";
+  const nombre = "Euruviel";
+  const edad = 19;
+  const carrera = "TSW";
   
   return { nombre, edad, carrera };
 }
-
+//ejercicio 1 terminado jejejj
 /**
  * Ejercicio 1.2: Operaciones aritmÃ©ticas bÃ¡sicas (3 puntos)
  * @param {number} a - Primer nÃºmero
@@ -31,12 +31,17 @@ function miInformacion() {
 function operacionesBasicas(a, b) {
   // TODO: Calcula suma, resta, multiplicaciÃ³n y divisiÃ³n de a y b
   
-  const suma = 0;
-  const resta = 0;
-  const multiplicacion = 0;
-  const division = 0;
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('Los parámetros deben ser números');
+  }
+  
+  const suma = a + b;
+  const resta = a - b;
+  const multiplicacion = a * b;
+  const division = b !== 0 ? a / b : null; // null es más apropiado que 0
   
   return { suma, resta, multiplicacion, division };
+
 }
 
 /**
@@ -47,7 +52,10 @@ function operacionesBasicas(a, b) {
  */
 function areaRectangulo(base, altura) {
   // TODO: Calcula y retorna el Ã¡rea (base * altura)
-  return 0;
+  if (base <= 0 || altura <= 0) {
+    throw new Error('Base y altura deben ser positivas');
+  }
+  return base * altura;
 }
 
 /**
@@ -59,7 +67,11 @@ function areaRectangulo(base, altura) {
  */
 function celsiusAFahrenheit(celsius) {
   // TODO: Implementa la conversiÃ³n
-  return 0;
+  if (typeof celsius !== 'number') {
+    throw new Error('La temperatura debe ser un número');
+  }
+  return (celsius * 9/5) + 32;
+
 }
 
 // ============================================
@@ -74,7 +86,11 @@ function celsiusAFahrenheit(celsius) {
 function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
-  return "";
+  if (typeof numero !== 'number' || !Number.isInteger(numero)) {
+    throw new Error('Debe ser un número entero');
+  }
+  return numero % 2 === 0 ? "par" : "impar";
+
 }
 
 /**
@@ -84,7 +100,12 @@ function parOImpar(numero) {
  */
 function evaluarNota(nota) {
   // TODO: Implementa la lÃ³gica con if/else
-  return "";
+  if (nota < 0 || nota > 100) {
+    throw new Error('La nota debe estar entre 0 y 100');
+  }
+  return nota >= 60 ? "Aprobado" : "Reprobado";
+
+
 }
 
 /**
@@ -96,7 +117,11 @@ function evaluarNota(nota) {
  */
 function mayorDeTres(a, b, c) {
   // TODO: Encuentra y retorna el mayor de los tres nÃºmeros
-  return 0;
+  if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
+    throw new Error('Todos los parámetros deben ser números');
+  }
+  return Math.max(a, b, c);
+
 }
 
 /**
@@ -106,7 +131,14 @@ function mayorDeTres(a, b, c) {
  */
 function clasificarEdad(edad) {
   // TODO: Implementa la clasificaciÃ³n con if/else if/else
-  return "";
+  if (edad < 0) {
+    throw new Error('La edad no puede ser negativa');
+  }
+  
+  if (edad <= 17) return "menor";
+  if (edad <= 64) return "adulto";
+  return "mayor";
+
 }
 
 // ============================================
@@ -122,7 +154,18 @@ function clasificarEdad(edad) {
  */
 function factorial(n) {
   // TODO: Implementa usando un bucle for
-  return 1;
+  if (!Number.isInteger(n) || n < 0) {
+    throw new Error('El factorial solo existe para números enteros no negativos');
+  }
+  
+  if (n === 0 || n === 1) return 1;
+  
+  let resultado = 1;
+  for (let i = 2; i <= n; i++) {
+    resultado *= i;
+  }
+  return resultado;
+
 }
 
 /**
@@ -132,7 +175,13 @@ function factorial(n) {
  */
 function sumaHastaN(n) {
   // TODO: Usa un bucle para sumar todos los nÃºmeros desde 1 hasta n
-  return 0;
+  if (!Number.isInteger(n) || n < 1) {
+    throw new Error('n debe ser un número entero positivo');
+  }
+  
+  // Fórmula matemática más eficiente: n * (n + 1) / 2
+  return (n * (n + 1)) / 2;
+
 }
 
 /**
@@ -143,8 +192,12 @@ function sumaHastaN(n) {
  */
 function tablaMultiplicar(numero) {
   // TODO: Genera un array con la tabla de multiplicar
-  const tabla = [];
-  return tabla;
+  if (typeof numero !== 'number') {
+    throw new Error('El parámetro debe ser un número');
+  }
+  
+  return Array.from({ length: 10 }, (_, i) => numero * (i + 1));
+
 }
 
 /**
@@ -155,8 +208,12 @@ function tablaMultiplicar(numero) {
  */
 function numerosPares(n) {
   // TODO: Crea un array con todos los nÃºmeros pares hasta n
-  const pares = [];
-  return pares;
+  if (!Number.isInteger(n) || n < 0) {
+    throw new Error('n debe ser un número entero no negativo');
+  }
+  
+  return Array.from({ length: Math.floor(n / 2) }, (_, i) => (i + 1) * 2);
+
 }
 
 // ============================================
@@ -170,7 +227,12 @@ function numerosPares(n) {
  */
 function sumaArray(numeros) {
   // TODO: Suma todos los elementos del array
-  return 0;
+  if (!Array.isArray(numeros)) {
+    throw new Error('El parámetro debe ser un array');
+  }
+  
+  return numeros.reduce((suma, num) => suma + num, 0);
+
 }
 
 /**
@@ -180,7 +242,12 @@ function sumaArray(numeros) {
  */
 function promedioArray(numeros) {
   // TODO: Calcula el promedio (suma total / cantidad de elementos)
-  return 0;
+  if (!Array.isArray(numeros) || numeros.length === 0) {
+    return 0;
+  }
+  
+  return numeros.reduce((suma, num) => suma + num, 0) / numeros.length;
+
 }
 
 /**
@@ -191,7 +258,12 @@ function promedioArray(numeros) {
 function encontrarMaximo(numeros) {
   // TODO: Encuentra y retorna el nÃºmero mÃ¡s grande
   // Pista: Puedes usar Math.max(...numeros) o hacerlo con un bucle
-  return 0;
+  if (!Array.isArray(numeros) || numeros.length === 0) {
+    throw new Error('El array no puede estar vacío');
+  }
+  
+  return Math.max(...numeros);
+
 }
 
 /**
@@ -203,8 +275,12 @@ function encontrarMaximo(numeros) {
  */
 function filtrarMayores(numeros, limite) {
   // TODO: Crea un nuevo array con solo los nÃºmeros mayores al lÃ­mite
-  const mayores = [];
-  return mayores;
+  if (!Array.isArray(numeros)) {
+    throw new Error('El primer parámetro debe ser un array');
+  }
+  
+  return numeros.filter(num => num > limite);
+
 }
 
 /**
@@ -216,8 +292,12 @@ function filtrarMayores(numeros, limite) {
 function invertirArray(arr) {
   // TODO: Invierte el orden de los elementos
   // Pista: Puedes usar arr.reverse() o hacerlo manualmente
-  const invertido = [];
-  return invertido;
+  if (!Array.isArray(arr)) {
+    throw new Error('El parámetro debe ser un array');
+  }
+  
+  return [...arr].reverse();
+
 }
 
 // ============================================
@@ -235,8 +315,12 @@ function invertirArray(arr) {
  */
 function crearMatriz(filas, columnas) {
   // TODO: Crea una matriz de filas x columnas llena de ceros
-  const matriz = [];
-  return matriz;
+  if (!Number.isInteger(filas) || !Number.isInteger(columnas) || filas <= 0 || columnas <= 0) {
+    throw new Error('Filas y columnas deben ser números enteros positivos');
+  }
+  
+  return Array.from({ length: filas }, () => Array(columnas).fill(0));
+
 }
 
 /**
@@ -248,7 +332,14 @@ function crearMatriz(filas, columnas) {
 function sumaMatriz(matriz) {
   // TODO: Suma todos los elementos de la matriz
   // NecesitarÃ¡s dos bucles: uno para las filas y otro para las columnas
-  return 0;
+  if (!Array.isArray(matriz) || matriz.length === 0) {
+    throw new Error('Debe ser una matriz válida');
+  }
+  
+  return matriz.reduce((total, fila) => 
+    total + fila.reduce((suma, num) => suma + num, 0), 0
+  );
+
 }
 
 /**
@@ -260,7 +351,12 @@ function sumaMatriz(matriz) {
  */
 function obtenerFila(matriz, indiceFila) {
   // TODO: Retorna la fila indicada
-  return [];
+  if (!Array.isArray(matriz) || indiceFila < 0 || indiceFila >= matriz.length) {
+    throw new Error('Índice de fila inválido');
+  }
+  
+  return [...matriz[indiceFila]]; // Retorna una copia
+
 }
 
 /**
@@ -272,8 +368,16 @@ function obtenerFila(matriz, indiceFila) {
  */
 function obtenerColumna(matriz, indiceColumna) {
   // TODO: Extrae todos los elementos de la columna indicada
-  const columna = [];
-  return columna;
+  if (!Array.isArray(matriz) || matriz.length === 0) {
+    throw new Error('Matriz inválida');
+  }
+  
+  if (indiceColumna < 0 || indiceColumna >= matriz[0].length) {
+    throw new Error('Índice de columna inválido');
+  }
+  
+  return matriz.map(fila => fila[indiceColumna]);
+
 }
 
 /**
@@ -285,8 +389,16 @@ function obtenerColumna(matriz, indiceColumna) {
  */
 function transponer(matriz) {
   // TODO: Crea la matriz transpuesta
-  const transpuesta = [];
-  return transpuesta;
+  if (!Array.isArray(matriz) || matriz.length === 0 || !Array.isArray(matriz[0])) {
+    throw new Error('Debe ser una matriz válida');
+  }
+  
+  const numColumnas = matriz[0].length;
+  
+  return Array.from({ length: numColumnas }, (_, j) =>
+    matriz.map(fila => fila[j])
+  );
+
 }
 
 // ============================================
