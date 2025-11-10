@@ -64,7 +64,7 @@ function celsiusAFahrenheit(celsius) {
   if (typeof celsius !== 'number') {
     throw new Error('La temperatura debe ser un número');
   }
-  return (celsius * 9/5) + 32;
+  return (celsius * 9/5) + 32; //retorna la temperatura en fahrenheit
 
 }
 
@@ -80,9 +80,6 @@ function celsiusAFahrenheit(celsius) {
 function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
-  if (typeof numero !== 'number' || !Number.isInteger(numero)) {
-    throw new Error('Debe ser un número entero');
-  }
   return numero % 2 === 0 ? "par" : "impar";
 
 }
