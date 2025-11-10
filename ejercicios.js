@@ -31,6 +31,7 @@ function miInformacion() {
  */
 function operacionesBasicas(a, b) {
   // TODO: Calcula suma, resta, multiplicaciÃ³n y divisiÃ³n de a y b
+  //operaciones basicas 
   const suma = a + b;
   const resta = a - b;
   const multiplicacion = a * b;
@@ -48,10 +49,7 @@ function operacionesBasicas(a, b) {
  */
 function areaRectangulo(base, altura) {
   // TODO: Calcula y retorna el Ã¡rea (base * altura)
-  if (base <= 0 || altura <= 0) {
-    throw new Error('Base y altura deben ser positivas');
-  }
-  return base * altura;
+  return base * altura; //retorna el area
 }
 
 /**
