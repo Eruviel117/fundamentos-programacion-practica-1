@@ -98,7 +98,7 @@ function evaluarNota(nota) {
   } else {
     return "Reprobado";
   }
-
+}
 
 
 /**
