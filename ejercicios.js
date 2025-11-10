@@ -22,6 +22,7 @@ function miInformacion() {
   return { nombre, edad, carrera };
 }
 //ejercicio 1 terminado jejejj
+
 /**
  * Ejercicio 1.2: Operaciones aritmÃ©ticas bÃ¡sicas (3 puntos)
  * @param {number} a - Primer nÃºmero
@@ -30,11 +31,6 @@ function miInformacion() {
  */
 function operacionesBasicas(a, b) {
   // TODO: Calcula suma, resta, multiplicaciÃ³n y divisiÃ³n de a y b
-  
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('Los parámetros deben ser números');
-  }
-  
   const suma = a + b;
   const resta = a - b;
   const multiplicacion = a * b;
