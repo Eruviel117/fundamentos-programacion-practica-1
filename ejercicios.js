@@ -334,7 +334,7 @@ function transponer(matriz) {
   // TODO: Crea la matriz transpuesta
 
   const numColumnas = matriz[0].length;
-  
+  // Fórmula matemática más eficiente: numColumnas = matriz.length
   return Array.from({ length: numColumnas }, (_, j) =>
     matriz.map(fila => fila[j])
   );
