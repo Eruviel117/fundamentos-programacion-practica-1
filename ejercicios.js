@@ -110,9 +110,7 @@ function evaluarNota(nota) {
  */
 function mayorDeTres(a, b, c) {
   // TODO: Encuentra y retorna el mayor de los tres nÃºmeros
-  if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
-    throw new Error('Todos los parámetros deben ser números');
-  }
+  
   return Math.max(a, b, c);
 
 }
@@ -124,12 +122,13 @@ function mayorDeTres(a, b, c) {
  */
 function clasificarEdad(edad) {
   // TODO: Implementa la clasificaciÃ³n con if/else if/else
-  if (edad < 0) {
-    throw new Error('La edad no puede ser negativa');
-  }
+//clasificar edad
   
   if (edad <= 17) return "menor";
-  if (edad <= 64) return "adulto";
+    else if (edad <= 64) return "adulto";
+    else return "mayor";
+
+
   return "mayor";
 
 }
