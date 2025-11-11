@@ -1,13 +1,10 @@
-# Práctica de Fundamentos de Programación
-## Desarrollo de Software y Negocios Digitales
+# Fundamentos de Algebra - Practica 1
+## Informacion del estudiante 
 
- ![Tests](https://github.com/JorgeTSW/fundamentos-programacion-practica-1/actions/workflows/test.yml/badge.svg)
-
-¡Bienvenido a la práctica de programación! En este repositorio aprenderás a programar en JavaScript mientras aplicas conceptos de álgebra.
 
 ## Objetivos
 
-- Aprender a usar Git y GitHub
+- 
 - Dominar los fundamentos de JavaScript
 - Prepararte para programar operaciones matriciales
 - Desarrollar habilidades de resolución de problemas
