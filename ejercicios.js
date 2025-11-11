@@ -215,7 +215,6 @@ function sumaArray(numeros) {
 function promedioArray(numeros) {
   // TODO: Calcula el promedio (suma total / cantidad de elementos)
   return numeros.reduce((suma, num) => suma + num, 0) / numeros.length;
-
 }
 
 /**
@@ -226,9 +225,6 @@ function promedioArray(numeros) {
 function encontrarMaximo(numeros) {
   // TODO: Encuentra y retorna el nÃºmero mÃ¡s grande
   // Pista: Puedes usar Math.max(...numeros) o hacerlo con un bucle
-  if (!Array.isArray(numeros) || numeros.length === 0) {
-    throw new Error('El array no puede estar vacío');
-  }
   
   return Math.max(...numeros);
 
