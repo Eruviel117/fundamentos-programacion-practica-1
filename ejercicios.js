@@ -286,10 +286,6 @@ function crearMatriz(filas, columnas) {
 function sumaMatriz(matriz) {
   // TODO: Suma todos los elementos de la matriz
   // NecesitarÃ¡s dos bucles: uno para las filas y otro para las columnas
-  if (!Array.isArray(matriz) || matriz.length === 0) {
-    throw new Error('Debe ser una matriz válida');
-  }
-  
   return matriz.reduce((total, fila) => 
     total + fila.reduce((suma, num) => suma + num, 0), 0
   );
