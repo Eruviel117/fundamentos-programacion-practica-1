@@ -175,12 +175,8 @@ function sumaHastaN(n) {
  */
 function tablaMultiplicar(numero) {
   // TODO: Genera un array con la tabla de multiplicar
-  if (typeof numero !== 'number') {
-    throw new Error('El parámetro debe ser un número');
-  }
-  
+  // Ejemplo: tablaMultiplicar(3) 
   return Array.from({ length: 10 }, (_, i) => numero * (i + 1));
-
 }
 
 /**
@@ -191,9 +187,6 @@ function tablaMultiplicar(numero) {
  */
 function numerosPares(n) {
   // TODO: Crea un array con todos los nÃºmeros pares hasta n
-  if (!Number.isInteger(n) || n < 0) {
-    throw new Error('n debe ser un número entero no negativo');
-  }
   
   return Array.from({ length: Math.floor(n / 2) }, (_, i) => (i + 1) * 2);
 
