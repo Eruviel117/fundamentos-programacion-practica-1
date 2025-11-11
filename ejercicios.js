@@ -300,11 +300,7 @@ function sumaMatriz(matriz) {
  * Ejemplo: obtenerFila([[1, 2], [3, 4], [5, 6]], 1) debe retornar [3, 4]
  */
 function obtenerFila(matriz, indiceFila) {
-  // TODO: Retorna la fila indicada
-  if (!Array.isArray(matriz) || indiceFila < 0 || indiceFila >= matriz.length) {
-    throw new Error('Índice de fila inválido');
-  }
-  
+  // TODO: Retorna la fila indicada (5 puntos)
   return [...matriz[indiceFila]]; // Retorna una copia
 
 }
