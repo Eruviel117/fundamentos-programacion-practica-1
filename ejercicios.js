@@ -314,9 +314,6 @@ function obtenerFila(matriz, indiceFila) {
  */
 function obtenerColumna(matriz, indiceColumna) {
   // TODO: Extrae todos los elementos de la columna indicada
-  if (!Array.isArray(matriz) || matriz.length === 0) {
-    throw new Error('Matriz inválida');
-  }
   
   if (indiceColumna < 0 || indiceColumna >= matriz[0].length) {
     throw new Error('Índice de columna inválido');
