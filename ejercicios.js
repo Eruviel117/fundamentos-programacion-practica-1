@@ -187,7 +187,7 @@ function tablaMultiplicar(numero) {
  */
 function numerosPares(n) {
   // TODO: Crea un array con todos los nÃºmeros pares hasta n
-  
+  // Ejemplo: numerosPares(10)
   return Array.from({ length: Math.floor(n / 2) }, (_, i) => (i + 1) * 2);
 
 }
