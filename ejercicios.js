@@ -272,9 +272,6 @@ function invertirArray(arr) {
  */
 function crearMatriz(filas, columnas) {
   // TODO: Crea una matriz de filas x columnas llena de ceros
-  if (!Number.isInteger(filas) || !Number.isInteger(columnas) || filas <= 0 || columnas <= 0) {
-    throw new Error('Filas y columnas deben ser números enteros positivos');
-  }
   
   return Array.from({ length: filas }, () => Array(columnas).fill(0));
 
@@ -346,10 +343,7 @@ function obtenerColumna(matriz, indiceColumna) {
  */
 function transponer(matriz) {
   // TODO: Crea la matriz transpuesta
-  if (!Array.isArray(matriz) || matriz.length === 0 || !Array.isArray(matriz[0])) {
-    throw new Error('Debe ser una matriz válida');
-  }
-  
+
   const numColumnas = matriz[0].length;
   
   return Array.from({ length: numColumnas }, (_, j) =>
