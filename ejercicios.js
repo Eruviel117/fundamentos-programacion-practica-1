@@ -202,9 +202,7 @@ function numerosPares(n) {
  * @returns {number} - Suma de todos los elementos
  */
 function sumaArray(numeros) {
-  // TODO: Suma todos los elementos del array
-  
-  
+  // TODO: Suma todos los elementos del arrays
   return numeros.reduce((suma, num) => suma + num, 0);
 
 }
@@ -216,10 +214,6 @@ function sumaArray(numeros) {
  */
 function promedioArray(numeros) {
   // TODO: Calcula el promedio (suma total / cantidad de elementos)
-  if (!Array.isArray(numeros) || numeros.length === 0) {
-    return 0;
-  }
-  
   return numeros.reduce((suma, num) => suma + num, 0) / numeros.length;
 
 }
