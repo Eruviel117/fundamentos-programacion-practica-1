@@ -29,3 +29,18 @@ Este proyecto contiene las soluciones de la Actividad 15, donde se desarrollan f
 
 ---
 
+### Sección 3: Funciones y Bucles
+3.1 **factorial(n)** → Calcular el factorial de un número con un bucle `for`.  
+3.2 **sumaHastaN(n)** → Suma todos los números del 1 al n usando la fórmula `n*(n+1)/2`.  
+3.3 **tablaMultiplicar(numero)** → Se genero un arreglo con la tabla de multiplicar del número (del 1 al 10).  
+3.4 **numerosPares(n)** → Se crea un arreglo con todos los números pares desde 2 hasta n.
+
+---
+### Sección 4: Arrays
+4.1 **sumaArray(numeros)** → Suma todos los elementos del array usando `reduce()`.  
+4.2 **promedioArray(numeros)** → Calcula el promedio dividiendo la suma total entre la cantidad de elementos.  
+4.3 **encontrarMaximo(numeros)** → Encuentra el número más grande del arreglo con `Math.max()`.  
+4.4 **filtrarMayores(numeros, limite)** → Devuelve un nuevo array solo con los valores mayores al límite.  
+4.5 **invertirArray(arr)** → Invierte el orden de los elementos de un array con `reverse()`.
+
+---
