@@ -239,9 +239,6 @@ function encontrarMaximo(numeros) {
  */
 function filtrarMayores(numeros, limite) {
   // TODO: Crea un nuevo array con solo los nÃºmeros mayores al lÃ­mite
-  if (!Array.isArray(numeros)) {
-    throw new Error('El primer parámetro debe ser un array');
-  }
   
   return numeros.filter(num => num > limite);
 
