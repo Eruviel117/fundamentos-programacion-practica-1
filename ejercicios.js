@@ -252,11 +252,7 @@ function filtrarMayores(numeros, limite) {
  */
 function invertirArray(arr) {
   // TODO: Invierte el orden de los elementos
-  // Pista: Puedes usar arr.reverse() o hacerlo manualmente
-  if (!Array.isArray(arr)) {
-    throw new Error('El parámetro debe ser un array');
-  }
-  
+  // Pista: Puedes usar arr.reverse() o hacerlo manualmente  
   return [...arr].reverse();
 
 }
