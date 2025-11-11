@@ -161,9 +161,6 @@ function factorial(n) {
  */
 function sumaHastaN(n) {
   // TODO: Usa un bucle para sumar todos los nÃºmeros desde 1 hasta n
-  if (!Number.isInteger(n) || n < 1) {
-    throw new Error('n debe ser un número entero positivo');
-  }
   
   // Fórmula matemática más eficiente: n * (n + 1) / 2
   return (n * (n + 1)) / 2;
