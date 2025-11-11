@@ -203,9 +203,7 @@ function numerosPares(n) {
  */
 function sumaArray(numeros) {
   // TODO: Suma todos los elementos del array
-  if (!Array.isArray(numeros)) {
-    throw new Error('El parámetro debe ser un array');
-  }
+  
   
   return numeros.reduce((suma, num) => suma + num, 0);
 
