@@ -1,100 +1,146 @@
 # Fundamentos de Algebra - Practica 1
-## Informacion del estudiante 
+
+## Información del Estudiante
+- **Nombre:** Euruviel Márquez Martínez  
+- **Matrícula:**  
+- **Grupo:** 1C 
+- **Carrera:** TSW  
+- **Cuatrimestre:** Primero  
+- **Profesor:** Jorge Javier Pedrozo Romero  
+
+##  Descripción del Proyecto
+
+Este repositorio contiene mi solución a la práctica de **Fundamentos de Programación**, donde implemento funciones en JavaScript para resolver problemas de álgebra básica, preparándome para trabajar con operaciones matriciales más complejas.
+
+##  Objetivos Alcanzados
+
+- ✅ Dominar variables y tipos de datos en JavaScript
+- ✅ Implementar estructuras condicionales
+- ✅ Utilizar bucles y funciones
+- ✅ Manipular arrays unidimensionales
+- ✅ Trabajar con arrays bidimensionales (matrices)
+- ✅ Aplicar control de versiones con Git y GitHub
+
+---
+
+## 📊 Progreso de Ejercicios
+
+### Sección 1: Variables y Tipos de Datos
+- [x] 1.1 Mi Información      ✅
+- [x] 1.2 Operaciones Básicas ✅
+- [x] 1.3 Área de Rectángulo  ✅
+- [x] 1.4 Conversión Celsius a Fahrenheit  ✅
 
 
-## Objetivos
+### Sección 2: Condicionales 
+- [x] 2.1 Par o Impar ✅
+- [x] 2.2 Evaluar Nota  ✅
+- [x] 2.3 Mayor de Tres  ✅
+- [x] 2.4 Clasificar Edad ✅
 
-- 
-- Dominar los fundamentos de JavaScript
-- Prepararte para programar operaciones matriciales
-- Desarrollar habilidades de resolución de problemas
 
-## Requisitos previos
+### Sección 3: Funciones y Bucles 
+- [x] 3.1 Factorial ✅
+- [x] 3.2 Suma Hasta N ✅
+- [x] 3.3 Tabla de Multiplicar ✅
+- [x] 3.4 Números Pares ✅
 
-- Tener una cuenta en [GitHub](https://github.com)
-- Instalar [Node.js](https://nodejs.org) (versión 14 o superior)
-- Instalar [Git](https://git-scm.com)
-- Un editor de código como [VS Code](https://code.visualstudio.com)
 
-## ¿Cómo empezar?
+### Sección 4: Arrays 
+- [x] 4.1 Suma de Array ✅
+- [x] 4.2 Promedio de Array ✅
+- [x] 4.3 Encontrar Máximo ✅
+- [x] 4.4 Filtrar Mayores  ✅
+- [x] 4.5 Invertir Array   ✅
 
-### Paso 1: Fork del repositorio
-1. Haz clic en el botón **Fork** en la esquina superior derecha
-2. Esto creará una copia del repositorio en tu cuenta
 
-### Paso 2: Clonar tu fork
-```bash
-git clone https://github.com/TU-USUARIO/fundamentos-programacion.git
-cd fundamentos-programacion
+
+### Sección 5: Arrays Bidimensionales - 
+- [x] 5.1 Crear Matriz ✅
+- [x] 5.2 Suma de Matriz  ✅
+- [x] 5.3 Obtener Fila  ✅
+- [x] 5.4 Obtener Columna  ✅
+- [x] 5.5 Transponer Matriz ✅
+
+---
+
+## 📈 Calificación Final
+
+```
+┌────────────────────────────────────────┐
+│  REPORTE DE CALIFICACIÓN               │
+├────────────────────────────────────────┤
+│  Puntos obtenidos: 100/100             │
+│  Porcentaje: 100%                      │
+│  🎓 Calificación: A - Excelente        │
+└────────────────────────────────────────┘
 ```
 
-### Paso 3: Instalar dependencias
+---
+### Instalar dependencias
 ```bash
 npm install
 ```
 
-### Paso 4: Completar los ejercicios
-Abre el archivo `ejercicios.js` y completa cada función siguiendo las instrucciones.
-
-### Paso 5: Probar tu código localmente
+### Ejecutar tests
 ```bash
 npm test
 ```
 
-### Paso 6: Subir tus cambios
+### Ejecutar tests en modo watch
 ```bash
-git add ejercicios.js
-git commit -m "Ejercicio #XX completado"
-git push origin main
+npm run test:watch
 ```
 
-### Paso 7: Ver tu calificación
-- Ve a la pestaña **Actions** en tu repositorio de GitHub
-- Verás el resultado de los tests automáticos
-- ¡Tu calificación aparecerá allí­!
-
-## Estructura del repositorio
-
+### Ver cobertura de código
+```bash
+npm run test:coverage
 ```
-fundamentos-programacion/
-├── .github/
-│   └── workflows/
-│       └── test.yml           # Configuración de GitHub Actions
-├── ejercicios.js              # Aquí­ escribirás tu código
-├── ejercicios.test.js         # Tests (NO modificar)
-├── package.json               # Configuración del proyecto
-└── README.md                  # Este archivo
-```
-
-## Reglas importantes
-
-1. **SOLO** debes modificar el archivo `ejercicios.js`
-2. **NO** modifiques los archivos de test
-3. **NO** modifiques la configuración de GitHub Actions
-4. Todos los ejercicios deben pasar los tests para obtener la máxima calificación
-
-## Consejos
-
-- Lee cuidadamente las instrucciones de cada ejercicio
-- Prueba tu código localmente antes de hacer push
-- Si un test falla, lee el mensaje de error - te dice qué está mal
-- Puedes hacer múltiples commits, no hay penalización
-- Busca ayuda en la documentación de [JavaScript MDN](https://developer.mozilla.org/es/docs/Web/JavaScript)
-
-## Sistema de calificación
-
-- Cada ejercicio vale puntos especí­ficos
-- La calificación final es automática
-- Aparecerá en los resultados de GitHub Actions
-- Badge de estado: ![Tests](https://github.com/JorgeTSW/fundamentos-programacion-practica-1/actions/workflows/test.yml/badge.svg)
-
-## Próximos pasos
-
-Una vez domines estos fundamentos, trabajaremos en:
-- Operaciones con matrices
-- Calculadora matricial
-- Aplicaciones prácticas (editores de imágenes, encriptación)
 
 ---
 
-**¡Éxito en tu práctica!**
+## 📁 Estructura del Proyecto
+
+```
+fundamentos-programacion-practica-1/
+│
+├── ejercicios.js           # ⭐ Archivo principal con mis soluciones
+├── ejercicios.test.js      # Tests automatizados (no modificar)
+├── package.json            # Configuración del proyecto
+├── README.md               # Este archivo
+├── GUIA_ESTUDIANTES.md     # Guía de referencia
+├── GUIA_INSTRUCTOR.md      # Guía del profesor
+│
+└── .github/
+    └── workflows/
+        └── test.yml        # Configuración de GitHub Actions
+```
+
+
+
+------
+## 💡 Aprendizajes Clave
+
+### Lo que más me costó
+- **Seccion 5: aprender a implementacion de matrices 
+
+### Lo que más me gustó
+- **Desarrollar ejercicios en javascript 
+
+---
+
+## 🤝 Agradecimientos
+
+- **Profesor Jorge Javier Pedrozo Romero** por la estructura del curso y la práctica
+- **Compañeros del Grupo [Enruque zabala]** por el apoyo mutuo
+- **Tecnológico de Software** por la formación integral
+
+---
+
+## 📄 Licencia
+
+Este proyecto es parte de las actividades académicas del **Tecnológico de Software** y está bajo la licencia MIT.
+
+---
+
+
